@@ -1,0 +1,320 @@
+@font-face {
+  font-family: "JosefinSans-Bold";
+  src: url(fonts/JosefinSans-Bold.ttf); }
+
+@font-face {
+  font-family: "JosefinSans-Regular";
+  src: url(fonts/JosefinSans-Regular.ttf); }
+
+@font-face {
+  font-family: "JosefinSans-SemiBold";
+  src: url(fonts/JosefinSans-SemiBold.ttf); }
+
+body {
+  margin: 0; }
+
+.header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  height: 80px;
+  background: #E4E3DF; }
+  .header__logo-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+    cursor: pointer;
+    text-decoration: none; }
+    .header__logo-wrapper > img {
+      width: 60px; }
+  .header__nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    margin-right: 100px; }
+
+.nav-menu__link {
+  font-family: JosefinSans-SemiBold, sans-serif;
+  height: fit-content;
+  font-size: 1.5em;
+  color: dimgray;
+  cursor: pointer;
+  text-decoration: none; }
+  .nav-menu__link:hover {
+    color: #3f704d; }
+
+.logo__text {
+  font-family: JosefinSans-Bold, sans-serif;
+  font-size: 2.5em;
+  color: #3f704d; }
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background: url(images/appetizer-brunch-close-up-1095550.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .home__main-text {
+    font-family: JosefinSans-Bold, sans-serif;
+    font-size: 3em;
+    color: white;
+    margin: 0;
+    text-align: center;
+    margin-left: 55px;
+    letter-spacing: 0.2em; }
+  .home__social-menu {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-left: 50px;
+    width: fit-content; }
+  .home__social-link {
+    margin-top: 70px; }
+    .home__social-link img {
+      width: 40px; }
+      @media only screen and (min-width: 768px) {
+        .home__social-link img {
+          width: 60px; } }
+
+.principles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(images/avocado-bread-breakfast-1351238.jpg) no-repeat;
+  background-size: cover; }
+  .principles__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh; }
+  .principles__list {
+    list-style-image: url(images/lettucee.png); }
+  .principles__item > span {
+    vertical-align: super;
+    font-family: JosefinSans-Regular, sans-serif;
+    font-size: 1.5em; }
+
+.section__name {
+  font-family: JosefinSans-Bold, sans-serif;
+  font-size: 3em;
+  color: white;
+  letter-spacing: 0.6em; }
+
+.products {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10%; }
+  .products__wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/clean-eating-cuisine-delicious-1152237.jpg) no-repeat;
+    background-size: cover; }
+  .products__card {
+    height: 400px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px; }
+    .products__card > img {
+      width: 250px;
+      height: 313px; }
+    .products__card-name {
+      font-family: JosefinSans-SemiBold, sans-serif; }
+    .products__card-price {
+      font-family: JosefinSans-Regular, sans-serif; }
+    .products__card-go {
+      font-family: JosefinSans-SemiBold, sans-serif;
+      background-color: #77b55a;
+      -moz-border-radius: 28px;
+      -webkit-border-radius: 28px;
+      border-radius: 28px;
+      border: 1px solid #4b8f29;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-size: 17px;
+      padding: 10px 35px;
+      text-decoration: none;
+      text-shadow: 0 1px 0 #5b8a3c; }
+
+@keyframes goBasket {
+  0% {
+    margin-top: -260px;
+    margin-left: 100px; }
+  30% {
+    margin-bottom: 300px;
+    margin-left: 300px; }
+  60% {
+    margin-bottom: 500px;
+    margin-left: 600px; }
+  100% {
+    margin-bottom: 600px;
+    margin-left: 1000px; } }
+
+.order {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0px 50px 0 160px;
+  height: 100vh;
+  background: url(images/alone-basket-carrots-1389103.jpg) no-repeat;
+  background-size: cover; }
+  .order__basket {
+    width: 80px;
+    position: absolute;
+    animation-duration: 3s;
+    animation-name: goBasket;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
+  .order__text {
+    font-family: JosefinSans-Regular, sans-serif;
+    text-align: end;
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: darkgreen;
+    margin-bottom: 200px; }
+  .order__button {
+    -moz-box-shadow: inset 0px 1px 0px 0px #3e7327;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #3e7327;
+    box-shadow: inset 0px 1px 0px 0px #3e7327;
+    background-color: #77b55a;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #4b8f29;
+    cursor: pointer;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #5b8a3c;
+    width: 200px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .order__button > span {
+      color: #ffffff;
+      font-family: JosefinSans-SemiBold, sans-serif;
+      font-weight: bold;
+      font-size: 2.5em; }
+    .order__button:hover {
+      background-color: darkgreen; }
+
+.about {
+  display: flex;
+  padding: 20px;
+  background: url(images/board-bread-breakfast-349610.jpg) no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-evenly; }
+  .about__title {
+    font-family: JosefinSans-Bold, sans-serif;
+    font-size: 2.5em;
+    color: #3f704d; }
+  .about__text {
+    font-family: JosefinSans-Regular, sans-serif;
+    font-size: 1.7em;
+    color: white;
+    text-shadow: #3f704d 0 0 2px; }
+
+.footer {
+  display: flex;
+  padding: 10px 140px;
+  flex-direction: row;
+  height: 200px;
+  justify-content: space-between;
+  align-items: center; }
+  .footer__nav-menu {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: end; }
+  .footer__questions {
+    display: flex;
+    flex-direction: column;
+    height: max-content; }
+  .footer__copyright {
+    font-family: JosefinSans-Regular, sans-serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: dimgray; }
+
+.questions__title {
+  font-family: JosefinSans-SemiBold, sans-serif;
+  font-size: 1.7em;
+  color: #3e7327; }
+
+.questions__email {
+  font-family: JosefinSans-Regular, sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  color: dimgray; }
+  .questions__email:hover {
+    color: #3e7327; }
+
+.bolder {
+  font-family: JosefinSans-Bold, sans-serif; }
+
+.carousel {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(images/close-up-colors-containers-1640776.jpg) no-repeat;
+  background-size: cover; }
+  .carousel-food {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10%; }
+  .carousel-banner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/blur-breakfast-cocktail-316891.jpg) no-repeat;
+    background-size: cover; }
+  .carousel-drinks {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10% 20%; }
+
+.title {
+  font-family: JosefinSans-Bold, sans-serif;
+  font-size: 3em;
+  color: white;
+  letter-spacing: 0.6em;
+  text-shadow: #C62D23 0 0 2px; }
+
+.header-products {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  height: 80px;
+  background: #E5E6EA; }
+

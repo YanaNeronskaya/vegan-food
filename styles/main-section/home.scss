@@ -1,0 +1,44 @@
+@import "../mixins/media-queries";
+@import "../mixins/mq";
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background: url(../asserts/appetizer-brunch-close-up-1095550.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__main-text{
+    font-family: JosefinSans-Bold, sans-serif;
+    font-size: 3em;
+    color: white;
+    margin: 0;
+    text-align: center;
+    margin-left: 55px;
+    letter-spacing: 0.2em;
+  }
+
+  &__social-menu {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-left: 50px;
+    width: fit-content;
+  }
+
+  &__social-link {
+    margin-top: 70px;
+
+    img {
+      width: 40px;
+
+      @include bp-min(m) {
+        width: 60px;
+      }
+    }
+  }
+}

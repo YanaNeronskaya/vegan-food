@@ -1,0 +1,55 @@
+.products {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10%;
+
+  &__wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../asserts/clean-eating-cuisine-delicious-1152237.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  &__card {
+    height: 400px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &>img {
+      width: 250px;
+      height: 313px;
+    }
+
+    &-name{
+      font-family: JosefinSans-SemiBold, sans-serif;
+    }
+
+    &-price{
+      font-family: JosefinSans-Regular, sans-serif;
+    }
+
+    &-go{
+      font-family: JosefinSans-SemiBold, sans-serif;
+      background-color: #77b55a;
+      -moz-border-radius: 28px;
+      -webkit-border-radius: 28px;
+      border-radius: 28px;
+      border: 1px solid #4b8f29;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-size: 17px;
+      padding: 10px 35px;
+      text-decoration: none;
+      text-shadow: 0 1px 0 #5b8a3c;
+    }
+  }
+}

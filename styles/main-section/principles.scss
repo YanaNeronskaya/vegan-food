@@ -1,0 +1,35 @@
+.principles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(../asserts/avocado-bread-breakfast-1351238.jpg) no-repeat;
+  background-size: cover;
+
+  &__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+  }
+
+  &__list {
+      list-style-image: url(../asserts/lettucee.png);
+  }
+
+  &__item {
+    &>span{
+      vertical-align: super;
+      font-family: JosefinSans-Regular, sans-serif;
+      font-size: 1.5em;
+    }
+  }
+}
+
+.section__name {
+  font-family: JosefinSans-Bold, sans-serif;
+  font-size: 3em;
+  color: white;
+  letter-spacing: 0.6em;
+}

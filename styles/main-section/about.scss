@@ -1,0 +1,23 @@
+.about {
+  display: flex;
+  padding: 20px;
+  background: url(../asserts/board-bread-breakfast-349610.jpg) no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-evenly;
+
+  &__title {
+    font-family: JosefinSans-Bold, sans-serif;
+    font-size: 2.5em;
+    color: #3f704d;
+  }
+
+  &__text {
+    font-family: JosefinSans-Regular, sans-serif;
+    font-size: 1.7em;
+    color: white;
+    text-shadow: #3f704d 0 0 2px;
+  }
+}

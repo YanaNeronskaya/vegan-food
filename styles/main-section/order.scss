@@ -1,0 +1,80 @@
+@keyframes goBasket {
+  0% {
+    margin-top: -260px;
+    margin-left: 100px;
+  }
+
+  30% {
+    margin-bottom: 300px;
+    margin-left: 300px;
+  }
+
+  60% {
+    margin-bottom: 500px;
+    margin-left: 600px;
+  }
+
+  100% {
+    margin-bottom: 600px;
+    margin-left: 1000px;
+  }
+}
+
+.order {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0px 50px 0 160px;
+  height: 100vh;
+  background: url(../asserts/alone-basket-carrots-1389103.jpg) no-repeat;
+  background-size: cover;
+
+  &__basket {
+    width: 80px;
+    position: absolute;
+    animation-duration: 3s;
+    animation-name: goBasket;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  &__text {
+    font-family: JosefinSans-Regular, sans-serif;
+    text-align: end;
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: darkgreen;
+    margin-bottom: 200px;
+  }
+
+  &__button {
+    -moz-box-shadow: inset 0px 1px 0px 0px #3e7327;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #3e7327;
+    box-shadow: inset 0px 1px 0px 0px #3e7327;
+    background-color: #77b55a;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #4b8f29;
+    cursor: pointer;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #5b8a3c;
+    width: 200px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &>span {
+      color: #ffffff;
+      font-family: JosefinSans-SemiBold, sans-serif;
+      font-weight: bold;
+      font-size: 2.5em;
+    }
+
+    &:hover {
+      background-color: darkgreen;
+    }
+  }
+}

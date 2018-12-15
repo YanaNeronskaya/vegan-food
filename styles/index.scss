@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "JosefinSans-Bold";
+  src : url(../asserts/fonts/JosefinSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: "JosefinSans-Regular";
+  src : url(../asserts/fonts/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "JosefinSans-SemiBold";
+  src : url(../asserts/fonts/JosefinSans-SemiBold.ttf);
+}
+
+@import "./mixins/mq";
+@import "./mixins/media-queries";
+
+@import "./header/index";
+@import "./main-section/home";
+@import "./main-section/principles";
+@import "./main-section/products";
+@import "./main-section/order";
+@import "./main-section/about";
+@import "./footer/index";
+
+@import "./main-section/carousel";
+@import "./header/products";

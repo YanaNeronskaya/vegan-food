@@ -1,0 +1,43 @@
+.carousel {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../asserts/close-up-colors-containers-1640776.jpg) no-repeat;
+  background-size: cover;
+
+  &-food {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10%;
+  }
+
+  &-banner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../asserts/blur-breakfast-cocktail-316891.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  &-drinks {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10% 20%;
+  }
+}
+
+.title {
+  font-family: JosefinSans-Bold, sans-serif;
+  font-size: 3em;
+  color: white;
+  letter-spacing: 0.6em;
+  text-shadow: #C62D23 0 0 2px;
+}

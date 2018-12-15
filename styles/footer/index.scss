@@ -1,0 +1,53 @@
+.footer {
+  display: flex;
+  padding: 10px 140px;
+  flex-direction: row;
+  height: 200px;
+  justify-content: space-between;
+  align-items: center;
+
+  &__nav-menu {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: end;
+
+  }
+
+  &__questions {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+  }
+
+  &__copyright {
+    font-family: JosefinSans-Regular, sans-serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: dimgray;
+  }
+}
+
+.questions {
+  &__title {
+    font-family: JosefinSans-SemiBold, sans-serif;
+    font-size: 1.7em;
+    color: #3e7327;
+  }
+
+  &__email {
+    font-family: JosefinSans-Regular, sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    color: dimgray;
+
+    &:hover {
+      color: #3e7327;
+    }
+  }
+}
+
+.bolder {
+  font-family: JosefinSans-Bold, sans-serif;
+}
