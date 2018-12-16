@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vegan Food</title>
+    <link href="../dist/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../logo.ico" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header class="header">
+    <a class="header__logo-wrapper" href="../index.html">
+        <img src="../asserts/avocado.svg" alt="logo">
+        <h2 class="logo__text">Vegan food</h2>
+    </a>
+</header>
+<main>
+    <section class="card">
+        <img src="../asserts/food/IMG_2213.jpg" alt="" width="400px">
+        <span class="card__span">
+            <h1 class="title-card">Топиакка с сыром чедер</h1>
+            <p class="text-card"> Полезная и очень вкусная - топиакка будет прекрасным источником энергии <br>
+            и полезных натуральных элементов на целый день</p>
+        </span>
+    </section>
+    <section id="principles" class="principles">
+        <p class="section__name">НАШИ ПРИНЦИПЫ</p>
+    </section>
+    <section class="principles__container">
+        <img alt="" src="../asserts/D38Y.gif" width="600" height="400">
+        <ul class="principles__list">
+            <li class="principles__item"><span>Доставляем только свежие продукты для наших клиентов</span></li>
+            <li class="principles__item"><span>Любим наших поставщиков и фермеров</span></li>
+            <li class="principles__item"><span>Внимательно отслеживаем всю приготовленную пищу</span></li>
+            <li class="principles__item"><span>Любим нашу работу</span></li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    <nav class="footer__nav-menu" id="navigation1">
+        <a class="nav-menu__link" href="#products">Продукты</a>
+        <a class="nav-menu__link" href="#order">Заказать</a>
+        <a class="nav-menu__link" href="#about">О нас</a>
+    </nav>
+    <img alt="" src="../asserts/carrots.svg" width="120">
+    <span class="footer__questions">
+        <span class="questions__title">Остались вопросы? <span class="bolder">Пиши на почту!</span></span>
+        <a class="questions__email">vegan.food@gmail.com</a>
+    </span>
+    <span class="footer__copyright">
+        <span>(C) Copyright VeganFood 2018</span>
+    </span>
+</footer>
+<script src="../dist/main.bundle.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#navigation").on("click", "a", function (event) {
+            event.preventDefault();
+            let id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1500);
+        });
+        $("#navigation1").on("click", "a", function (event) {
+            event.preventDefault();
+            let id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1500);
+        });
+    });
+</script>
+</body>
+</html>

@@ -318,3 +318,27 @@ body {
   height: 80px;
   background: #E5E6EA; }
 
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  background-color: white;
+  padding: 20px; }
+  .card__span {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+
+.title-card {
+  font-family: JosefinSans-Bold, sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  color: #3f704d; }
+
+.text-card {
+  font-family: JosefinSans-Regular, sans-serif;
+  font-size: 1em;
+  color: #3f704d; }
+
